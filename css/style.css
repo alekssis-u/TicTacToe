@@ -1,0 +1,220 @@
+body{
+    margin:0;
+    padding:0;
+   /* background-image: url("/images/background.jpg"); */
+   background-size: cover;
+   background-color: rgb(180, 213, 224);
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   justify-content: center;
+   align-items: center;
+   overflow-x: hidden;
+}
+h1{
+    font-family: "Waiting for the Sunrise", serif;
+    max-width: 90%;
+    text-align: center;
+    margin-top: 80px;
+    font-size: 70px;
+    color:rgb(40, 52, 75);
+    margin: 0 auto;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .10em solid rgb(10, 7, 20); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    letter-spacing: .11em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+}
+@media (max-width: 1200px) {
+    h1 {
+        font-size: 60px; /* Smaller font size for small screens */
+        margin: 10px auto;    /* Reduce margin */
+        
+    }
+}
+@media (max-width: 1000px) {
+    h1 {
+        font-size: 50px; /* Smaller font size for small screens */
+        margin: 10px auto;    /* Reduce margin */
+        
+    }
+}
+@media (max-width: 900px) {
+    h1 {
+        font-size: 40px; /* Smaller font size for small screens */
+        margin: 10px auto;    /* Reduce margin */  
+    }
+}
+@media (max-width: 800px) {
+    h1 {
+        font-size: 30px; /* Smaller font size for small screens */
+        margin: 10px auto;    /* Reduce margin */  
+    }
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(40, 52, 75); }
+  }
+  .gif{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #gif{
+    width:200px;
+
+  }
+  .container {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px; 
+    margin-top: 20px;
+}
+button {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border: 2px solid rgb(40, 52, 75);
+    width: 250px;
+    height: 80px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 30px;
+
+}
+button:hover{
+    background-color: rgb(40, 52, 75);
+    transition: 0.4s;
+    color: rgb(255, 255, 255);
+}
+#shadow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.7;
+  display: none;
+  
+}
+#message {
+  position: fixed;
+  top: 200px;
+  left: 35%;
+  right: 35%;
+  background: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  display: none;
+  width:30%;
+  height:500px;
+  font-family: "Waiting for the Sunrise", serif;
+  font-size:x-large;
+}
+@media (max-width:1700px){
+    #message {
+        position: fixed;
+        top: 200px;
+        left: 35%;
+        right: 35%;
+        background: #fff;
+        border-radius: 5px;
+        padding: 10px;
+        display: none;
+        width:30%;
+        height:500px;
+        font-family: "Waiting for the Sunrise", serif;
+        font-size:22px;
+      }
+}
+@media (max-width:1490px){
+    #message {
+        position: fixed;
+        top: 200px;
+        left: 30%;
+        right: 30%;
+        background: #fff;
+        border-radius: 5px;
+        padding: 10px;
+        display: none;
+        width:40%;
+        height:500px;
+        font-family: "Waiting for the Sunrise", serif;
+        font-size:22px;
+      }
+}
+@media (max-width:1120px){
+    #message {
+        position: fixed;
+        top: 200px;
+        left: 25%;
+        right: 25%;
+        background: #fff;
+        border-radius: 5px;
+        padding: 10px;
+        display: none;
+        width:50%;
+        height:500px;
+        font-family: "Waiting for the Sunrise", serif;
+        font-size:22px;
+      }
+}
+@media (max-width:900px){
+    #message {
+        position: fixed;
+        top: 200px;
+        left: 20%;
+        right: 20%;
+        background: #fff;
+        border-radius: 5px;
+        padding: 10px;
+        display: none;
+        width:60%;
+        height:500px;
+        font-family: "Waiting for the Sunrise", serif;
+        font-size:22px;
+      }
+}
+@media (max-width:750px){
+    #message {
+        position: fixed;
+        top: 200px;
+        left: 20%;
+        right: 20%;
+        background: #fff;
+        border-radius: 5px;
+        padding: 10px;
+        display: none;
+        width:60%;
+        height:500px;
+        font-family: "Waiting for the Sunrise", serif;
+        font-size:20px;
+      }
+}
+@media (max-width:600px){
+    #message {
+        position: fixed;
+        top: 200px;
+        left: 15%;
+        right: 15%;
+        background: #fff;
+        border-radius: 5px;
+        padding: 10px;
+        display: none;
+        width:70%;
+        height:500px;
+        font-family: "Waiting for the Sunrise", serif;
+        font-size:20px;
+      }
+}
+

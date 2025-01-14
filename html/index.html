@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Waiting+for+the+Sunrise&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <h1>Let's play a Tic Tac Toe game!</h1>
+    <div class="gif">
+        <img  src="/images/giphy.webp" id="gif">
+    </div>
+    <div class="container">
+    <button id="play" onclick="location.href='play.html';">Play</button>
+    <button id="button">How to play</button>
+</div>
+    <div id="shadow"></div>
+    <div id="message">
+        <p><b>How to Play:</b>
+<br>
+            Players take turns placing their symbol (X or O) in one of the empty squares.
+            A square can only be claimed by one player and cannot be changed once marked.
+          <br>  <b>Winning the Game:<br></b>
+            
+            A player wins if they successfully place three of their symbols in:
+            A horizontal row (e.g., top, middle, or bottom row),
+            A vertical column (e.g., left, center, or right column),
+            Or one of the two diagonals (top-left to bottom-right or top-right to bottom-left).
+            Draw (Tie):
+            
+            If all nine squares are filled and neither player has three in a row, the game ends in a draw.</p>
+    </div>
+    <script src="/js/file.js"></script>
+
+</body>
+</html>
